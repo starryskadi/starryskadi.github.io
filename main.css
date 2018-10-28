@@ -1,6 +1,3 @@
-.main {
-    margin-top: 4em;
-}
 #page2, #page3 {
     display: none;
 }
@@ -10,6 +7,27 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .right.menu {
+        display: none !important;
+    }
+    .ui.top.menu{
+        border-radius: 0;
+    }
+    .left.menu .item:not(.header) {
+        display: block;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .left.menu .item:not(.header) {
+        display: none;
+    }
+    
+}
+
+.ui.vertical.menu {
+    width: auto;
+}
 
 
